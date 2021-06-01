@@ -5,7 +5,7 @@ I chose the microservice architecture for this project because IoT means Big Dat
 
 In developing this project, I will use a lot of tools to learn how to use them and to find the best solution for my use case.
 
-The documentation is constantly improving and I will add new information when I develop a new function in the system.
+The documentation is constantly improving.
 
 If you want to contribute or/and learn, come on. The main purpose of this project is educational.
 > Everything we do is practice for something greater than where we currently are.  Practice only makes for improvement.  – Les Brown
