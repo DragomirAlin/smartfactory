@@ -111,5 +111,14 @@ A list of devices compatible with this system. The list is constantly growing wi
 | Notification Service | currently: private
 
 
+## pictures from the project
 
+![Eureka Discovery Service](images/discovery.png)
 
+![CI Jenkins for local dev](images/jenkins.png)
+
+![Admin Dashboard](images/admin.png)
+
+![Admin Dashboard Services Overview](images/admin-2.png)
+
+![Initial Arhitecture](images/SmartFactory-Arhitecture-v1.0.0.png)
