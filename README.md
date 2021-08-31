@@ -111,7 +111,7 @@ A list of devices compatible with this system. The list is constantly growing wi
 | Notification Service | currently: private
 
 
-## pictures from the project
+# pictures from the project
 
 ![Eureka Discovery Service](images/discovery.png)
 
