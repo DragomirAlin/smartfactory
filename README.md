@@ -3,7 +3,7 @@ Smart Factory is an IoT opensource project whose main purpose is to monitor, ver
 
 I chose the microservice architecture for this project because IoT means Big Data and needs to be scalable, available and flexible.
 
-In developing this project, I will use a lot of tools to learn how to use them and to find the best solution for my use case.
+In developing this project, I will use a lot of tools to learn how to use them and to find the best solutions for the use cases of the project.
 
 The documentation is constantly improving.
 
@@ -13,14 +13,14 @@ If you want to contribute or/and learn, come on. The main purpose of this projec
 ## Software Stack and Tools:
 Languages:
 <ul>
-<li>Java 15</li>
+<li>Java 17 LTS</li>
 <li>Typescript 4.1</li>
 </ul>
 
 #### Frameworks & Tools
 | Technology type  | Name  |
 |:--------------------- |:----------------- |
-| Frontend Framework | Angular 11
+| Frontend Framework | Angular 12
 | Backend Framework | Spring Framework
 | | Spring Boot
 | CSS framework | Bootstrap 5
@@ -78,24 +78,86 @@ Languages:
 | Github Actions |  Cloud
 | Jenkins |  Local
 | Docker | Containerization
+| Docker Registry | Docker Hub
 
 #### Deployment:
+Kubernetes - Automating deployment, scaling, and management.
 | Technology  | Type  |
 |:--------------------- |:----------------- |
-| Kubernetes | Automating deployment, scaling, and management.
+| minikube | local development
+| k3s      | staging - [Raspberry Pi 4 Cluster](https://github.com/DragomirAlin/raspberry-k8s-cluster)
+| Openstack Magnum | production
+
 
 ## Internet of Things
 A list of devices compatible with this system. The list is constantly growing with the development of new adapters and source codes for devices.
-| Type  | Description  | Communication
-|:--------------------- |:----------------- |:----------------- 
-| Module |  ESP8266 | MQTT
-| Module |  ESP32 | MQTT
-| SBC | Raspberry PI | HTTP/MQTT
-| Device | Google Home | HTTP
+
+| Type  | Description  | Communication | Implementation
+|:--------------------- |:----------------- |:-----------------| :----------------- |
+| Module |  ESP8266 | MQTT | In progress
+| Module |  ESP32 | MQTT | In progress
+| SBC | Raspberry PI | HTTP/MQTT | In progress
+| Device | Google Home | HTTP | In progress
+
+### Embedded
+Languages:
+<ul>
+<li>C++</li>
+<li>Python</li>
+</ul>
+
+
+## Organization
+For organization and planning I use Meistertask.
+![Tasks](images/organization.png)
+
+## Development Tools
+| Name | Description  | 
+|:--------------------- |:----------------- |
+| Github |  Git repository hosting service 
+| Git |  Version control 
+| IntelliJ IDEA | Java development
+| WebStorm | Frontend development
+| PyCharm | Scripting development
+| VS Code | YAML Editor
+| Slack | Webhooks notification
+| Meistertask | Planning/Organization
+| Lens K8s |The Kubernetes IDE
+| Postman | Test API
+| Swagger | Create API
+| MongoDB Compass| GUI for MongoDB
+| MQTTfx | MQTT client
+| DBeaver | GUI for SQL
+| Arduino | Embedded dev
+
+## Desktop Dev
+| Name | Version | 
+|:--------------------- |:----------------- |
+| Ubuntu | 20.04
+
+
 
 ## Features and Requirements
-
+#### Functional requirements 
+* Data ingestion and stream processing
+* Device management
+* Edge computing
+* Advanced analytics
+* Notification/Alerting
+* Enterprise integration with business
+systems.
+#### Non-functional requirements 
+* Security
+* Stability
+* Scalability
+* Reliability
+* Resistance
+* Interoperability
+* Maintainability
+* Accessibility
 ## Arhitecture
+#### Draw
+#### UML
 
 ## Repositories
 | Name  | URL
@@ -103,7 +165,7 @@ A list of devices compatible with this system. The list is constantly growing wi
 | Data Acqusition | [DragomirAlin/smartfactory-data-acquisition-microservice](https://github.com/DragomirAlin/smartfactory-data-acquisition-microservice)
 | Deployment | [DragomirAlin/smartfactory-deployment](https://github.com/DragomirAlin/smartfactory-deployment)
 | Frontend | [DragomirAlin/smartfactory-ui-angular](https://github.com/DragomirAlin/smartfactory-ui-angular)
-| Monitor Service | [DragomirAlin/smartfactory-monitor](https://github.com/DragomirAlin/smartfactory-monitor)
+| Subscription Service | [DragomirAlin/smartfactory-subscription](https://github.com/DragomirAlin/smartfactory-subscription)
 | API Gateway | [DragomirAlin/smartfactory-api-gateway](https://github.com/DragomirAlin/smartfactory-api-gateway)
 | Dashboard Admin | [DragomirAlin/smartfactory-admin](https://github.com/DragomirAlin/smartfactory-admin)
 | Discovery Service | [DragomirAlin/smartfactory-discovery-service](https://github.com/DragomirAlin/smartfactory-discovery-service)
@@ -116,6 +178,8 @@ A list of devices compatible with this system. The list is constantly growing wi
 ![Eureka Discovery Service](images/discovery.png)
 
 ![CI Jenkins for local dev](images/jenkins.png)
+
+![Kubernetes Deployment](images/deployment.png)
 
 ![Admin Dashboard](images/admin.png)
 
