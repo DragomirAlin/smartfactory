@@ -175,14 +175,28 @@ systems.
 
 # pictures from the project
 
+
+### Eureka Discovery Service
 ![Eureka Discovery Service](images/discovery.png)
 
+
+### CI Jenkins for local dev
 ![CI Jenkins for local dev](images/jenkins.png)
 
+### Kubernetes Deployment
 ![Kubernetes Deployment](images/deployment.png)
 
+### Admin Dashboard
 ![Admin Dashboard](images/admin.png)
 
+### Admin Dashboard Services Overview
 ![Admin Dashboard Services Overview](images/admin-2.png)
 
+### Arhitecture V1
 ![Initial Arhitecture](images/SmartFactory-Arhitecture-v1.0.0.png)
+
+### Arhitecture V2
+![Arhitecture V2](images/smartfactory-v2.png)
+
+### CI Pipline
+![CI Pipline](images/dev-pipline.png)
