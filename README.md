@@ -32,7 +32,7 @@ Languages:
 | API gateway |  Spring Cloud Gateway
 | Centralized configuration | Spring Cloud Config
 | Declarative HTTP client | Spring Cloud OpenFeign
-| Service discovery | 	Spring Cloud Netflix Eureka / Spring Consul
+| Service discovery | 	Spring Cloud Netflix Eureka(tried) / Spring Consul(current)
 | Circuit breaker | Spring Cloud Netflix Hystrix
 | Client-side load balancing  | Spring Cloud Netflix Ribbon
 
