@@ -35,6 +35,7 @@ Languages:
 | Service discovery | 	Spring Cloud Netflix Eureka(tried) / Spring Consul(current)
 | Circuit breaker | Spring Cloud Netflix Hystrix
 | Client-side load balancing  | Spring Cloud Netflix Ribbon
+| Discovery Client | Spring Cloud Kubernetes
 
 #### Logging, Monitoring & Notification
 | Technology type  | Name  |
