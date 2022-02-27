@@ -34,10 +34,10 @@ Languages:
 | API gateway |  Spring Cloud Gateway
 | Centralized configuration | Spring Cloud Config
 | Declarative HTTP client | Spring Cloud OpenFeign
-| Service discovery | Spring Cloud Netflix Eureka / Spring Consul
+| Service discovery | 	Spring Cloud Netflix Eureka(tried) / Spring Consul(current)
 | Circuit breaker | Spring Cloud Netflix Hystrix
 | Client-side load balancing  | Spring Cloud Netflix Ribbon
-| Kubernetes | Spring Cloud Kubernetes
+| Discovery Client | Spring Cloud Kubernetes
 
 ### Logging, Monitoring & Notification
 | Technology type  | Name  |
@@ -177,7 +177,7 @@ systems.
 |:--------------------- |:----------------- 
 | Data Acqusition | [DragomirAlin/smartfactory-data-acquisition-microservice](https://github.com/DragomirAlin/smartfactory-data-acquisition-microservice)
 | Deployment | [DragomirAlin/smartfactory-deployment](https://github.com/DragomirAlin/smartfactory-deployment)
-| Frontend | [DragomirAlin/smartfactory-ui-angular](https://github.com/DragomirAlin/smartfactory-ui-angular)
+| Frontend | [DragomirAlin/smartfactory-ui-angular](https://github.com/DragomirAlin/smartfactory-angular-ui)
 | Subscription Service | [DragomirAlin/smartfactory-subscription](https://github.com/DragomirAlin/smartfactory-subscription)
 | API Gateway | [DragomirAlin/smartfactory-api-gateway](https://github.com/DragomirAlin/smartfactory-api-gateway)
 | Dashboard Admin | [DragomirAlin/smartfactory-admin](https://github.com/DragomirAlin/smartfactory-admin)
