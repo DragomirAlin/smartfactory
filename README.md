@@ -1,14 +1,16 @@
 # Smart Factory Platform
-Smart Factory is an IoT opensource project whose main purpose is to monitor, verify, manage, control and maintain sensors, modules, devices and smart objects in Smart City, Smart Environments and many others. This project was born from my passion for technology, microservices, cloud and internet of things.
+Smart Factory is an IoT opensource project whose main purpose is to monitor, verify, manage and control sensors, modules and smart devices in Smart City, Smart Environments and many others. This project was born from my passion for technology, microservices, cloud and internet of things.
 
-I chose the microservice architecture for this project because IoT means Big Data and needs to be scalable, available and flexible.
-
-In developing this project, I will use a lot of tools to learn how to use them and to find the best solutions for the use cases of the project.
+In developing of this project, I'm going to use a lot of tools to understand and learn how to use them. I want to find the best solutions for the project.
 
 The documentation is constantly improving.
 
+I chose the microservice architecture for this project because IoT means Big Data and the system needs to be scalable, available and flexible.
+
 If you want to contribute or/and learn, come on. The main purpose of this project is educational.
 > Everything we do is practice for something greater than where we currently are.  Practice only makes for improvement.  – Les Brown
+
+If you have any tips, suggestions or ideas for this project, let me know.
 
 ## Software Stack and Tools:
 Languages:
@@ -17,26 +19,27 @@ Languages:
 <li>Typescript 4.1</li>
 </ul>
 
-#### Frameworks & Tools
+### Frameworks & Tools
 | Technology type  | Name  |
 |:--------------------- |:----------------- |
-| Frontend Framework | Angular 12
-| Backend Framework | Spring Framework
-| | Spring Boot
-| CSS framework | Bootstrap 5
-| Build tool | Maven 
+| Frontend Framework | Angular 12 |
+| Backend Framework | Spring Framework |
+| | Spring Boot |
+| CSS framework | Bootstrap 5 |
+| Build tool | Maven |
 
-#### Cloud Environment: Spring Cloud
+### Cloud Tools: Spring Cloud
 | Technology type  | Name  |
 |:--------------------- |:----------------- |
 | API gateway |  Spring Cloud Gateway
 | Centralized configuration | Spring Cloud Config
 | Declarative HTTP client | Spring Cloud OpenFeign
-| Service discovery | 	Spring Cloud Netflix Eureka / Spring Consul
+| Service discovery | Spring Cloud Netflix Eureka / Spring Consul
 | Circuit breaker | Spring Cloud Netflix Hystrix
 | Client-side load balancing  | Spring Cloud Netflix Ribbon
+| Kubernetes | Spring Cloud Kubernetes
 
-#### Logging, Monitoring & Notification
+### Logging, Monitoring & Notification
 | Technology type  | Name  |
 |:--------------------- |:----------------- |
 | Distributed tracing | Spring Cloud Sleuth
@@ -47,47 +50,60 @@ Languages:
 | Monitor and Manage | Spring Boot Actuator
 | Microservices state | Spring Boot Admin
 
-#### Messaging:
-| Technology 
-|:--------------------- 
-| RabbitMQ | 
-| MQTT | 
+### Messaging:
+| Technology |
+|:---------------------|
+| RabbitMQ | |
+| MQTT | |
 
-#### Databases:
+### Databases:
 | Technology | Descripion  |
 |:---------------------|:---------------------  
 | NoSQL | MongoDB
 | SQL | Postgres
 
-#### Security: 
+### Security: 
 | Technology  | Descripion  |
 |:--------------------- |:----------------- |
 | OAuth 2.0 |  Protocol
 | Keycloak |  Identity and Access Management
 
-#### Testing:
+### Testing:
 | Technology | Descripion  |
 |:--------------------- |:----------------- |
-| JUnit |  Backend
-| Karma  |  Frontend
+| JUnit |  Java testing
+| Karma  |  Angular testing
 | Sonar Cloud | Code Quality & Security
+| Testcontainers | Java library for test
 
-#### CI/CD:
+### CI/CD:
 | Technology  | Type  |
 |:--------------------- |:----------------- |
 | Github Actions |  Cloud
 | Jenkins |  Local
 | Docker | Containerization
 | Docker Registry | Docker Hub
+| Argo CD | Kubernetes
+| Tekton | Kubernetes
+| Helm | manage K8s application
 
-#### Deployment:
+### Deployment:
 Kubernetes - Automating deployment, scaling, and management.
 | Technology  | Type  |
 |:--------------------- |:----------------- |
 | minikube | local development
 | k3s      | staging - [Raspberry Pi 4 Cluster](https://github.com/DragomirAlin/raspberry-k8s-cluster)
-| Openstack Magnum | production
+| Cloud provider | production
 
+### Automation
+| Technology  | Description  |
+|:--------------------- |:--------------------- |
+| Terraform |  infrastructure provisioning |
+
+### API documentation
+| Technology |
+|:--------------------- |
+| Swagger |
 
 ## Internet of Things
 A list of devices compatible with this system. The list is constantly growing with the development of new adapters and source codes for devices.
@@ -102,13 +118,12 @@ A list of devices compatible with this system. The list is constantly growing wi
 ### Embedded
 Languages:
 <ul>
-<li>C++</li>
-<li>Python</li>
+    <li>C++</li>
+    <li>Python</li>
 </ul>
 
-
 ## Organization
-For organization and planning I use Meistertask.
+I use Meistertask for organization and planning
 ![Tasks](images/organization.png)
 
 ## Development Tools
@@ -124,7 +139,7 @@ For organization and planning I use Meistertask.
 | Meistertask | Planning/Organization
 | Lens K8s |The Kubernetes IDE
 | Postman | Test API
-| Swagger | Create API
+| Swagger UI | Create API
 | MongoDB Compass| GUI for MongoDB
 | MQTTfx | MQTT client
 | DBeaver | GUI for SQL
@@ -134,8 +149,6 @@ For organization and planning I use Meistertask.
 | Name | Version | 
 |:--------------------- |:----------------- |
 | Ubuntu | 20.04
-
-
 
 ## Features and Requirements
 #### Functional requirements 
@@ -189,7 +202,7 @@ systems.
 ### Admin Dashboard
 ![Admin Dashboard](images/admin.png)
 
-### Admin Dashboard Services Overview
+### Admin Dashboard - Services Overview
 ![Admin Dashboard Services Overview](images/admin-2.png)
 
 ### Arhitecture V1
@@ -198,5 +211,21 @@ systems.
 ### Arhitecture V2
 ![Arhitecture V2](images/smartfactory-v2.png)
 
+### Arhitecture V3 - soon
+
 ### CI Pipline
 ![CI Pipline](images/dev-pipline.png)
+
+
+### Argo CD
+![Argo CD](images/argocd.png)
+
+
+### Docker Hub
+![Docker Registry](images/dockerhub.png)
+
+### ELK - Logging
+![Logs](images/elastic.png)
+
+### Slack Notifications
+![Slack](images/slack.png)
