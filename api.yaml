@@ -1,16 +1,22 @@
 openapi: 3.0.1
 info:
   title: Smart Factory IoT
-  version: 0.1.0
+  version: 1.0.0
   contact:
     name: Dragomir Alin
   description: Smart Factory IoT
+
 servers:
-  - url: http://localhost:8080
+  - url: http://{host}:{port}/{base}
     description: local environment
     variables:
       port:
         default: '8080'
+      host:
+        default: 'localhost'
+      base:
+        default: 'api/v1'
+
 tags:
   - name: Acquisition
     description: Acquisition resource endpoint
@@ -24,7 +30,7 @@ security:
       - write
       - read
 paths:
-  /acquisition:
+  /acquisition/mqtt/:
     get:
       tags:
         - Acquisition
@@ -37,7 +43,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ResponseDTO'
+                $ref: '#/components/schemas/Response'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -48,7 +54,7 @@ paths:
           $ref: '#/components/responses/NotFound'
         '500':
           $ref: '#/components/responses/ServerError'
-  /acquisition/publish:
+  /acquisition/mqtt/publish:
     post:
       tags:
         - Acquisition
@@ -60,7 +66,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/MessageDTO'
+              $ref: '#/components/schemas/Message'
       responses:
          '201':
            $ref: '#/components/responses/Created'
@@ -74,7 +80,7 @@ paths:
            $ref: '#/components/responses/NotFound'
          '500':
            $ref: '#/components/responses/ServerError'
-  /acquisition/subscribe:
+  /acquisition/mqtt/subscribe:
     post:
       tags:
         - Acquisition
@@ -100,7 +106,7 @@ paths:
            $ref: '#/components/responses/NotFound'
          '500':
            $ref: '#/components/responses/ServerError'
-  /acquisition/unsubscribe:
+  /acquisition/mqtt/unsubscribe:
     delete:
       tags:
         - Acquisition
@@ -124,7 +130,7 @@ paths:
            $ref: '#/components/responses/NotFound'
          '500':
            $ref: '#/components/responses/ServerError'
-  /acquisition/data:
+  /acquisition/mqtt/data:
     get:
       tags:
         - Acquisition
@@ -139,7 +145,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/DataDTO'
+                  $ref: '#/components/schemas/Data'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -150,7 +156,7 @@ paths:
           $ref: '#/components/responses/NotFound'
         '500':
           $ref: '#/components/responses/ServerError'
-  /acquisition/data/{topic}:
+  /acquisition/mqtt/data/{topic}:
     get:
       tags:
         - Acquisition
@@ -171,7 +177,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/DataDTO'
+                  $ref: '#/components/schemas/Data'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -183,7 +189,7 @@ paths:
         '500':
           $ref: '#/components/responses/ServerError'
           
-  /notification:
+  /notification/notification:
     get:
       tags:
         - Notification
@@ -196,7 +202,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ResponseDTO'
+                $ref: '#/components/schemas/Response'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -207,7 +213,7 @@ paths:
           $ref: '#/components/responses/NotFound'
         '500':
           $ref: '#/components/responses/ServerError'
-  /notification/mail:
+  /notification/notification/mail:
     post:
       tags:
         - Notification
@@ -219,7 +225,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/MailDTO'
+              $ref: '#/components/schemas/Mail'
       responses:
          '201':
            $ref: '#/components/responses/Created'
@@ -233,7 +239,7 @@ paths:
            $ref: '#/components/responses/NotFound'
          '500':
            $ref: '#/components/responses/ServerError'
-  /notification/sms:
+  /notification/notification/sms:
     post:
       tags:
         - Notification
@@ -245,7 +251,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SmsDTO'
+              $ref: '#/components/schemas/Sms'
       responses:
          '201':
            $ref: '#/components/responses/Created'
@@ -259,7 +265,7 @@ paths:
            $ref: '#/components/responses/NotFound'
          '500':
            $ref: '#/components/responses/ServerError'
-  /subscription:
+  /subscription/subscription:
     get:
       tags:
         - Subscription
@@ -272,7 +278,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ResponseDTO'
+                $ref: '#/components/schemas/Response'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -294,7 +300,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/SubscriptionDTO'
+              $ref: '#/components/schemas/Subscription'
       responses:
          '201':
            $ref: '#/components/responses/Created'
@@ -308,7 +314,7 @@ paths:
            $ref: '#/components/responses/NotFound'
          '500':
            $ref: '#/components/responses/ServerError'
-  /subscription/all:
+  /subscription/subscription/all:
     get:
       tags:
         - Subscription
@@ -323,7 +329,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/SubscriptionDTO'
+                  $ref: '#/components/schemas/Subscription'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -334,7 +340,7 @@ paths:
           $ref: '#/components/responses/NotFound'
         '500':
           $ref: '#/components/responses/ServerError'
-  /subscription/{id}:
+  /subscription/subscription/{id}:
     get:
       tags:
         - Subscription
@@ -355,7 +361,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/SubscriptionDTO'
+                  $ref: '#/components/schemas/Subscription'
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -399,7 +405,7 @@ components:
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/CreatedDTO'
+            $ref: '#/components/schemas/Created'
     NotFound:
       description: not found
     Unauthorized:
@@ -411,13 +417,13 @@ components:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/ValidationDTO'
+              $ref: '#/components/schemas/Validation'
     ServerError:
       description: internal server error
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ErrorDTO'
+            $ref: '#/components/schemas/Error'
 
   requestBodies:
     PatchBody:
@@ -428,15 +434,15 @@ components:
           schema:
             $ref: '#/components/schemas/PatchBody'
   schemas:
-    CreatedDTO:
+    Created:
       type: object
       properties:
         id:
           type: string
     PatchBody:
       items:
-        $ref: '#/components/schemas/JsonPatchDTO'
-    JsonPatchDTO:
+        $ref: '#/components/schemas/JsonPatch'
+    JsonPatch:
       type: object
       description: A JSONPatch document as defined by RFC 6902.
       required:
@@ -456,7 +462,7 @@ components:
         from:
           type: string
           description: A string containing a JSON Pointer value.
-    ValidationDTO:
+    Validation:
       type: object
       properties:
         code:
@@ -465,20 +471,20 @@ components:
           type: string
         description:
           type: string
-    ErrorDTO:
+    Error:
       type: object
       properties:
         code:
           type: string
         message:
           type: string
-    ResponseDTO:
+    Response:
       type: object
       properties:
         response:
           type: string
           description: response
-    DataDTO:
+    Data:
       type: object
       properties:
         id:
@@ -489,7 +495,7 @@ components:
           type: object
         arriveAt:
           type: string
-    MessageDTO:
+    Message:
       type: object
       properties:
         topic:
@@ -500,7 +506,7 @@ components:
           type: boolean
         qos:
           type: number
-    MailDTO:
+    Mail:
       type: object
       properties:
         mailFrom:
@@ -517,14 +523,14 @@ components:
           type: string
         contentType:
           type: string
-    SmsDTO:
+    Sms:
       type: object
       properties:
         numberTo: 
           type: string
         message:
           type: string
-    SubscriptionDTO:
+    Subscription:
       type: object
       properties:
         id:
