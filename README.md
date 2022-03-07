@@ -184,6 +184,7 @@ systems.
 | Discovery Service | [DragomirAlin/smartfactory-discovery-service](https://github.com/DragomirAlin/smartfactory-discovery-service)
 | Config Service | [DragomirAlin/smartfactory-config-microservice](https://github.com/DragomirAlin/smartfactory-config-microservice)
 | Notification Service | currently: private
+| Swagger API | [DragomirAlin/smartfactory-swagger-api](https://github.com/DragomirAlin/smartfactory-swagger-api)
 
 
 # pictures from the project
