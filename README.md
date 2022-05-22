@@ -85,20 +85,20 @@ Languages:
 | Docker Registry | Docker Hub
 | Argo CD | Continuous deployment
 | Tekton | Kubernetes
-| Helm | package 
+| Helm | Package apps
 
 ### Deployment:
 Kubernetes - Automating deployment, scaling, and management.
 | Technology  | Type  |
 |:--------------------- |:----------------- |
-| minikube | local development
-| k3s      | staging - [Raspberry Pi 4 Cluster](https://github.com/DragomirAlin/raspberry-k8s-cluster)
-| kubespray | production
+| minikube | Local development
+| k3s      | Staging - [Raspberry Pi 4 Cluster](https://github.com/DragomirAlin/raspberry-k8s-cluster)
+| kubespray | Production
 
 ### Automation
 | Technology  | Description  |
 |:--------------------- |:--------------------- |
-| Terraform |  infrastructure provisioning - nodes, networks, security groups, gateways, loadbalancers |
+| Terraform |  Infrastructure provisioning - nodes, networks, security groups, gateways, loadbalancers |
 | Ansible | Deploy and manage Kubespray |
 
 ### API documentation
