@@ -51,10 +51,10 @@ Languages:
 | Microservices state | Spring Boot Admin
 
 ### Messaging:
-| Technology |
-|:---------------------|
-| RabbitMQ | |
-| MQTT | |
+| Technology | Descripion |
+|:---------------------|:---------------------  
+| RabbitMQ | internal messaging |
+| MQTT | IoT communication|
 
 ### Databases:
 | Technology | Descripion  |
@@ -71,21 +71,21 @@ Languages:
 ### Testing:
 | Technology | Descripion  |
 |:--------------------- |:----------------- |
-| JUnit |  Java testing
+| JUnit & Mockito |  Spring
 | Karma  |  Angular testing
 | Sonar Cloud | Code Quality & Security
-| Testcontainers | Java library for test
+| Testcontainers | Spring
 
 ### CI/CD:
-| Technology  | Type  |
+| Technology  | Description  |
 |:--------------------- |:----------------- |
-| Github Actions |  Cloud
-| Jenkins |  Local
+| Github Actions |  Cloud CI
+| Jenkins |  Local CI
 | Docker | Containerization
 | Docker Registry | Docker Hub
-| Argo CD | Kubernetes
+| Argo CD | Continuous deployment
 | Tekton | Kubernetes
-| Helm | manage K8s application
+| Helm | package 
 
 ### Deployment:
 Kubernetes - Automating deployment, scaling, and management.
@@ -93,17 +93,18 @@ Kubernetes - Automating deployment, scaling, and management.
 |:--------------------- |:----------------- |
 | minikube | local development
 | k3s      | staging - [Raspberry Pi 4 Cluster](https://github.com/DragomirAlin/raspberry-k8s-cluster)
-| Cloud provider | production
+| kubespray | production
 
 ### Automation
 | Technology  | Description  |
 |:--------------------- |:--------------------- |
-| Terraform |  infrastructure provisioning |
+| Terraform |  infrastructure provisioning - nodes, networks, security groups, gateways, loadbalancers |
+| Ansible | Deploy and manage Kubespray |
 
 ### API documentation
 | Technology |
 |:--------------------- |
-| Swagger |
+| Swagger OpenAPI 3 |
 
 ## Internet of Things
 A list of devices compatible with this system. The list is constantly growing with the development of new adapters and source codes for devices.
