@@ -1,4 +1,12 @@
 # Smart Factory Platform
+![java](https://img.shields.io/badge/Java-17-green)
+![spring](https://img.shields.io/badge/Spring-3.0.0-green)
+![last commit](https://img.shields.io/github/last-commit/dragomiralin/smartfactory)
+![contributors](https://img.shields.io/github/contributors/dragomiralin/smartfactory)
+![rest-api](https://img.shields.io/badge/REST-API-violet)
+![microservices](https://img.shields.io/badge/Microservices-Architecture-blue)
+
+## Overwiew
 Smart Factory is an IoT opensource project whose main purpose is to monitor, verify, manage and control sensors, modules and smart devices in Smart City, Smart Environments and many others. This project was born from my passion for technology, microservices, cloud and internet of things.
 
 In developing of this project, I'm going to use a lot of tools to understand and learn how to use them. I want to find the best solutions for the project.
